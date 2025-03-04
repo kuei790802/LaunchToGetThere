@@ -13,32 +13,10 @@
 <body>
     <div class="container text-center mt-5">
         <h1>午餐選擇器</h1>
-        <button id="randomLunch" class="btn btn-primary main-btn mt-4">幫我選午餐</button>
+        <button id="showNearby" class="btn btn-primary main-btn mt-4">顯示附近餐廳</button>
         
-        <!-- 快速篩選 -->
-        <div class="mt-4">
-            <label>價格範圍:</label>
-            <select id="priceFilter" class="form-select d-inline w-auto">
-                <option value="all">全部</option>
-                <option value="low">$0-100</option>
-                <option value="mid">$100-300</option>
-                <option value="high">$300+</option>
-            </select>
-            <label>風格:</label>
-            <select id="styleFilter" class="form-select d-inline w-auto">
-                <option value="all">全部</option>
-                <option value="chinese">中式</option>
-                <option value="japanese">日式</option>
-                <option value="western">西式</option>
-            </select>
-            <label>距離:</label>
-            <select id="distanceFilter" class="form-select d-inline w-auto">
-                <option value="all">全部</option>
-                <option value="near">1公里內</option>
-                <option value="medium">5公里內</option>
-                <option value="far">10公里內</option>
-            </select>
-        </div>
+        <!-- 餐廳列表 -->
+        <div id="restaurantList" class="mt-4"></div>
 
         <!-- 最近選擇歷史 -->
         <div class="history">
